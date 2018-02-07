@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="contain">
+    <div class="container container--sing">
+      <header class="page-header">
+        <a class="logo-href logo-href--mobile" href="log_in.html">
+          <img class="logo" src="img/logo.svg" width="84" height="24" alt="RelaxLux">
+        </a>
+        <a class="logo-href logo-href--desk" href="log_in.html">
+          <img class="logo" src="img/logo.svg" width="128" height="36" alt="RelaxLux">
+        </a>
+      </header>
+      <main class="page-main">
+        <form class="contain form" action="#" method="post">
+          <div class="form-container form-container--sing">
+            <h1 class="caption">Sign Up</h1>
+            <input class="input-text" type="text" name="username" id="Name" placeholder="Name" minlength="1" required>
+            <input class="input-text" type="text" name="mail" id="Mail" placeholder="Email" minlength="1" required>
+            <input class="input-text" type="text" name="re-mail" id="Re-mail" placeholder="Re-enter email" minlength="1" required>
+            <input class="input-text" type="password" name="password" id="Password" placeholder="Password" minlength="1" required>
+            <input class="input-text" type="password" name="re-password" id="Re-password" placeholder="Re-enter password" minlength="1" required>
+            <p class="form-text">
+              <input class="input-checkbox" type="checkbox" name="checkbox" id="checkbox">
+              <label class="check-label" for="checkbox">Receive our weekly newsletter and other occasional updates</label>
+            </p>
+            <p class="buttons">
+              <button class="btn" type="submit">sign up</button>
+              <a class="btn btn--href" href="log_in.html" tabindex="0">log in</a>
+            </p>
+            <p class="form-text">By signing up, you agree to our <a class="" href="#">terms of use</a>, <a class="" href="#">privacy policy</a>, 
+              <a class="" href="#">and cookie policy</a>.
+            </p>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

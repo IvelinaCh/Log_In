@@ -1,0 +1,375 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #03A9F4;
+}
+
+.container--login {
+  background-image: url("../img/pedro-lastra-157071.jpg");
+}
+
+.container--sing {
+  background-image: url("../img/geran-de-klerk-216686.jpg");
+}
+
+.caption {
+  font-family: Roboto;
+  color: #353535;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 34px;
+}
+
+.caption--forgot {
+  margin-bottom: 23px;
+}
+
+input::placeholder {
+  color: #8A959A;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-text {
+  max-width: 300px;
+  padding: 3px 0 0 24px;
+  margin: 0 0 115px;
+  font-family: Roboto;
+  color: #8A959A;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  box-sizing: border-box;
+}
+
+.forgot-text {
+  padding: 0;
+  margin: 0 0 20px;
+  color: #353535;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.forgot--request .forgot-text {
+  margin: 0 0 33px;
+}
+
+.form-text--forgot {
+  padding: 0;
+  color: #8A959A;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.forgot--request {
+  padding: 0;
+  margin: 0;
+}
+
+.forgot--request .input-text--forgot {
+  margin-bottom: 76px;
+}
+
+.form-text--login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  /*vertical-align: top;*/
+  height: 36px;
+  width: 145px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #03A9F4;
+  border: 2px solid #03A9F4;
+  border-radius: 100px;
+  box-sizing: border-box;
+}
+
+.btn--href {
+  display: inline-block;
+  padding-top: 8px;
+  height: 36px;
+  font-family: Roboto;
+  color: #03A9F4;
+  background-color: #FFFFFF;
+}
+
+.input-text {
+  height: 40px;
+  width: 300px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.invalid {
+  border-color: #FF0000;
+  background-color: #FFFBC8;
+}
+
+.invalid-text {
+  padding: 20px 0 0 20px;
+  font-family: Roboto;
+  color: #FF0000;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  background: url("../img/error.svg") bottom left no-repeat;
+}
+
+.input-checkbox {
+  display: none;
+}
+
+.check-label {
+  position: relative;
+}
+
+.check-label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -23px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #E0E0E0;
+  border-radius: 3px;
+}
+
+.check-label::before {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 4px;
+  height: 9px;
+  top: -4px;
+  left: -18px;
+  border: 2px solid #FFFFFF ;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.input-checkbox:checked + .check-label::before {
+  display: block;
+}
+
+.input-checkbox:checked + .check-label::after {
+  background: #03A9F4;
+  border-color: #03A9F4;
+}
+
+.logo-href {
+  position: relative;
+  padding: 9px 5px 9px 20px;
+  margin: 20px 0 0;
+  background-color: #FFFFFF;
+}
+
+.logo-href--desk {
+  display: none;
+}
+
+.logo-href--mobile {
+  display: inline-block;
+}
+
+.logo-href::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -46px;
+  width: 0;
+  height: 0;
+  border: 23px solid transparent;
+  border-left-color: #FFFFFF;
+}
+
+.contain {
+  max-width: 659px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container--login,
+.container--sing {
+  background-size: 100% 275px;
+  background-repeat: no-repeat;
+}
+
+.page-main {
+  position: relative;
+  margin-top: 185px;
+  padding: 40px;
+}
+
+.form::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  border-right: 100vw solid transparent;
+  border-bottom: 28px solid #FFFFFF;
+  z-index: 2;
+}
+
+.form {
+  width: 320px;
+}
+
+.form-container {
+  margin: 0;
+  padding: 0;
+}
+
+.forgot-href {
+  color: #FFFFFF;
+}
+
+@media (min-width: 660px) {
+
+  .contain {
+    max-width: 1200px;
+  }
+
+  .container {
+    height: 700px;
+    margin: 135px 80px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+  }
+
+  body {
+    background-color: #03A9F4;
+  }
+
+  .logo-href {
+    padding: 14px 19px 9px 49px;
+    margin: 50px 0 0;
+  }
+
+  .logo-href::after {
+    right: -64px;
+    border: 32px solid transparent;
+    border-left-color: #FFFFFF;
+  }
+
+  .logo-href::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 10px;
+    height: 63px;
+    background: #FFFFFF;
+  }
+
+  .logo-href--mobile {
+    display: none;
+  }
+
+  .logo-href--desk {
+    display: inline-block;
+  }
+
+  .caption {
+    margin-bottom: 55px;
+  }
+
+  .page-main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .form::after {
+    top: 0;
+    left: -71px;
+    border-top: 700px solid transparent;
+    border-right: 73px solid #FFFFFF;
+    border-bottom: transparent;
+    z-index: 2;
+  }
+
+  .page-header {
+    float: left;
+    width: 85px;
+  }
+
+  .container--login,
+  .container--sing {
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .form {
+    position: relative;
+    float: right;
+    width: 50%;
+    min-width: 400px;
+    height: 700px;
+    margin: 0;
+    background: #FFFFFF;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .form-container {
+    width: 400px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+  }
+
+  .form-container--login {
+    margin: 200px auto;
+    padding: 5px;
+  }
+
+  .form-container--sing {
+    margin: 100px auto;
+    padding: 5px;
+  }
+
+  .form-container--forgot {
+    margin: 215px auto;
+    padding: 5px;
+    width: 300px;
+  }
+
+  .form-text {
+    margin: 0 0 20px;
+  }
+
+  .forgot-text {
+    margin: 0 0 30px;
+  }
+
+  .forgot--request .input-text--forgot {
+    margin-bottom: 3px;
+  }
+
+  .caption--forgot {
+    margin-bottom: 20px;
+  }
+}
