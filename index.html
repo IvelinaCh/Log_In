@@ -44,22 +44,30 @@
       var message = document.createElement('p');
 
       var showError = function(inputs) {
+        var errMessages = [];
+        var errFilterMessages = [];
         for (var i = inputs.length - 1; i >= 0; i--) {
           if (inputs[i].value === "") {
             inputs[i].classList.add("invalid");
             message.className = "invalid-text";
             message.textContent = "Incorrect " + inputs[i].id;
+            errMessages[i] = message;
             caption.appendChild(message);
           } else {
             inputs[i].classList.remove("invalid");
+            delete errMessages[i];
+          }
+        } errFilterMessages = errMessages.filter(function(it) {
+            return it !== undefined;
+          });
+          if (errFilterMessages.length === 0 && (caption.hasChildNodes())) {
             caption.removeChild(message);
           }
-        }
       };
 
       var onSubmitClick = function(evt) {
         evt.preventDefault();
-        showError(inputs);showError(inputs);
+        showError(inputs);
       }
 
        form.addEventListener("submit", onSubmitClick);
